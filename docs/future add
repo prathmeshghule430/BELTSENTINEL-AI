@@ -1,0 +1,7 @@
+docs/
+├── architecture.png
+├── hardware_setup.png
+├── dashboard.png
+├── yolo_detection.png
+├── alerts.png
+└── training_results.png

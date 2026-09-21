@@ -1,0 +1,12 @@
+path: yolo/dataset
+
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: normal_belt
+  1: belt_crack
+  2: joint_damage
+  3: belt_tear
+  4: edge_damage

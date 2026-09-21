@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>BELTSENTINEL AI</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     APPLICATION
+====================================================== -->
+
+<div class="app">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    ================================================== -->
+
+    <aside class="sidebar">
+
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                BS
+            </div>
+
+            <div>
+
+                <h1>BELTSENTINEL</h1>
+
+                <span>AI MONITORING</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+
+            <a
+                href="#dashboard"
+                data-page="dashboard"
+                class="nav-item active"
+            >
+
+                <span class="nav-icon">▦</span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a
+                href="#live-feed"
+                data-page="live-feed"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">◉</span>
+
+                <span>Live Feed</span>
+
+            </a>
+
+
+            <a
+                href="#analytics"
+                data-page="analytics"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">⌁</span>
+
+                <span>Analytics</span>
+
+            </a>
+
+
+            <a
+                href="#alerts"
+                data-page="alerts"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">!</span>
+
+                <span>Alerts</span>
+
+            </a>
+
+
+            <a
+                href="#reports"
+                data-page="reports"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">▤</span>
+
+                <span>Reports</span>
+
+            </a>
+
+
+            <a
+                href="#settings"
+                data-page="settings"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">⚙</span>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- SIDEBAR FOOTER -->
+
+        <div class="sidebar-footer">
+
+            <div class="health-dot"></div>
+
+            <div>
+
+                <strong>System Online</strong>
+
+                <small>
+                    Monitoring active
+                </small>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main class="main">
+
+
+        <!-- ==================================================
+             HEADER
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <div>
+
+                <div class="breadcrumb">
+                    BELTSENTINEL AI / Monitoring
+                </div>
+
+                <h2 id="page-title">
+                    Control Dashboard
+                </h2>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+
+                <div class="clock">
+
+                    <span>LOCAL TIME</span>
+
+                    <strong id="local-time">
+                        --
+                    </strong>
+
+                </div>
+
+
+                <div class="connection-pill">
+
+                    <span
+                        class="connection-dot"
+                    ></span>
+
+                    <span
+                        class="system-status"
+                    >
+                        ONLINE
+                    </span>
+
+                </div>
+
+
+                <button
+                    id="push-notification-button"
+                    class="outline-button push-notification-button"
+                    type="button"
+                    title="Enable mobile push notifications"
+                >
+                    ENABLE ALERTS
+                </button>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- ==================================================
+             DASHBOARD PAGE
+        ================================================== -->
+
+        <section
+            id="page-dashboard"
+            class="app-page"
+        >
+
+
+            <!-- SYSTEM BANNER -->
+
+            <div class="system-banner">
+
+                <div>
+
+                    <span class="eyebrow">
+                        SYSTEM STATUS
+                    </span>
+
+                    <h3>
+                        Conveyor monitoring system active
+                    </h3>
+
+                    <p>
+                        Real-time telemetry, AI detection
+                        and five-joint monitoring.
+                    </p>
+
+                </div>
+
+
+                <div class="banner-status">
+
+                    <span class="status-dot"></span>
+
+                    <strong>
+                        <span class="system-status">
+                            ONLINE
+                        </span>
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TELEMETRY -->
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        REAL-TIME TELEMETRY
+                    </span>
+
+                    <h3>
+                        Conveyor Parameters
+                    </h3>
+
+                </div>
+
+                <span class="live-badge">
+                    LIVE
+                </span>
+
+            </div>
+
+
+            <div class="telemetry-grid">
+
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+                        <span>BELT POSITION</span>
+                        <span class="metric-icon">↔</span>
+                    </div>
+
+                    <strong id="belt-speed">
+                        0 pulses
+                    </strong>
+
+                    <small>
+                        Encoder position
+                    </small>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+                        <span>VIBRATION</span>
+                        <span class="metric-icon">≋</span>
+                    </div>
+
+                    <strong id="vibration">
+                        0
+                    </strong>
+
+                    <small>
+                        Events
+                    </small>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+                        <span>TEMPERATURE</span>
+                        <span class="metric-icon">°</span>
+                    </div>
+
+                    <strong id="temperature">
+                        0.0 °C
+                    </strong>
+
+                    <small>
+                        DHT11
+                    </small>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+                        <span>HUMIDITY</span>
+                        <span class="metric-icon">%</span>
+                    </div>
+
+                    <strong id="humidity">
+                        0.0 %
+                    </strong>
+
+                    <small>
+                        DHT11
+                    </small>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+                        <span>MOTOR CURRENT</span>
+                        <span class="metric-icon">A</span>
+                    </div>
+
+                    <strong id="current">
+                        0.00 A
+                    </strong>
+
+                    <small>
+                        ACS712
+                    </small>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-top">
+                        <span>ACOUSTIC</span>
+                        <span class="metric-icon">◖</span>
+                    </div>
+
+                    <strong id="acoustic">
+                        0
+                    </strong>
+
+                    <small>
+                        LM393
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 INDUSTRIAL SCADA PROCESS OVERVIEW
+                 VISUAL ONLY - NO JS / FUNCTIONALITY CHANGES
+            ================================================== -->
+
+            <div class="scada-process-panel">
+
+                <div class="scada-process-header">
+                    <div>
+                        <span class="eyebrow">PROCESS GRAPHIC</span>
+                        <h3>CONVEYOR LINE 01 — JOINT INSPECTION</h3>
+                    </div>
+                    <div class="scada-process-meta">
+                        <span class="scada-tag">LINE: CV-01</span>
+                        <span class="scada-run"><i></i> RUNNING</span>
+                    </div>
+                </div>
+
+                <div class="scada-process-canvas">
+
+                    <div class="scada-flow-label">MATERIAL FLOW ►</div>
+
+                    <div class="scada-drive">
+                        <div class="scada-drive-box">
+                            <span>DRIVE</span>
+                            <strong>M-01</strong>
+                            <small>12V DC MOTOR</small>
+                        </div>
+                        <div class="scada-lamp green"></div>
+                        <span class="scada-state">RUN</span>
+                    </div>
+
+                    <div class="scada-belt-zone">
+                        <div class="scada-belt-top">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+
+                        <div class="scada-belt-line">
+                            <div class="scada-arrow">►</div>
+                            <div class="scada-junction j1">
+                                <div class="scada-joint-lamp green"></div>
+                                <strong>J1</strong>
+                                <small>NORMAL</small>
+                            </div>
+                            <div class="scada-junction j2">
+                                <div class="scada-joint-lamp green"></div>
+                                <strong>J2</strong>
+                                <small>NORMAL</small>
+                            </div>
+                            <div class="scada-junction j3">
+                                <div class="scada-joint-lamp green"></div>
+                                <strong>J3</strong>
+                                <small>NORMAL</small>
+                            </div>
+                            <div class="scada-junction j4">
+                                <div class="scada-joint-lamp green"></div>
+                                <strong>J4</strong>
+                                <small>NORMAL</small>
+                            </div>
+                            <div class="scada-junction j5">
+                                <div class="scada-joint-lamp green"></div>
+                                <strong>J5</strong>
+                                <small>NORMAL</small>
+                            </div>
+                        </div>
+
+                        <div class="scada-sensor-line">
+                            <div class="scada-instrument">
+                                <span>ENC</span>
+                                <b>ENC-01</b>
+                            </div>
+                            <div class="scada-instrument">
+                                <span>VIB</span>
+                                <b>VIB-01</b>
+                            </div>
+                            <div class="scada-instrument">
+                                <span>MIC</span>
+                                <b>MIC-01</b>
+                            </div>
+                            <div class="scada-instrument">
+                                <span>TEMP</span>
+                                <b>DHT-01</b>
+                            </div>
+                            <div class="scada-instrument">
+                                <span>CURR</span>
+                                <b>ACS-01</b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scada-end-unit">
+                        <div class="scada-lamp green"></div>
+                        <strong>TAIL</strong>
+                        <small>CV-01</small>
+                    </div>
+
+                    <div class="scada-bottom-status">
+                        <span><i class="green"></i> FIELD DEVICES ONLINE</span>
+                        <span><i class="cyan"></i> AI INSPECTION ENABLED</span>
+                        <span><i class="yellow"></i> NO ACTIVE ALARM</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAIN MONITORING GRID -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- CAMERA -->
+
+                <div class="panel camera-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                COMPUTER VISION
+                            </span>
+
+                            <h3>
+                                Live Inspection Feed
+                            </h3>
+
+                        </div>
+
+                        <span
+                            class="live-badge"
+                            id="camera-status-dashboard"
+                        >
+                            CAMERA CONNECTING...
+                        </span>
+
+                    </div>
+
+
+                    <div class="camera-live-wrapper">
+
+                        <img
+                            id="dashboard-camera-feed"
+                            class="camera-live-image"
+                            src="/api/camera/feed"
+                            alt="BELTSENTINEL AI live camera feed"
+                        >
+
+                        <div
+                            id="dashboard-camera-offline"
+                            class="camera-offline-overlay"
+                            style="display:none;"
+                        >
+                            CAMERA NOT AVAILABLE
+                        </div>
+
+                    </div>
+
+
+                    <div class="camera-footer">
+
+                        <span>
+                            Vision pipeline:
+                            <strong>STANDBY</strong>
+                        </span>
+
+                        <span>
+                            YOLO:
+                            <strong>STANDBY</strong>
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- AI DETECTION -->
+
+                <div class="panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                AI ANALYSIS
+                            </span>
+
+                            <h3>
+                                Latest Detection
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detection-main">
+
+                        <span class="detection-label">
+                            DETECTION TYPE
+                        </span>
+
+                        <strong id="detection-type">
+                            NORMAL
+                        </strong>
+
+                    </div>
+
+
+                    <div class="confidence-section">
+
+                        <div class="row-between">
+
+                            <span>
+                                Confidence
+                            </span>
+
+                            <strong id="confidence">
+                                0.0%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="confidence-bar">
+
+                            <div
+                                class="confidence-bar-fill"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-list">
+
+                        <div>
+
+                            <span>
+                                Joint Location
+                            </span>
+
+                            <strong id="joint-location">
+                                None
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Detection Time
+                            </span>
+
+                            <strong id="detection-time">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                AI Status
+                            </span>
+
+                            <strong id="ai-status">
+                                NORMAL
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ai-message">
+
+                        <span class="message-icon">
+                            AI
+                        </span>
+
+                        <span id="ai-message">
+                            System operating normally.
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- JOINT MONITORING -->
+
+            <div class="panel">
+
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            ENCODER LOCALIZATION
+                        </span>
+
+                        <h3>
+                            Five-Joint Monitoring
+                        </h3>
+
+                    </div>
+
+
+                    <div class="current-position">
+
+                        Current:
+                        <strong id="current-joint">
+                            Joint 1
+                        </strong>
+
+                        <span>
+                            Position:
+                            <strong id="encoder-position">
+                                0
+                            </strong>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="joint-grid">
+
+
+                    <div class="joint-card normal">
+
+                        <div class="joint-number">
+                            J1
+                        </div>
+
+                        <div class="joint-info">
+
+                            <strong>
+                                Joint 1
+                            </strong>
+
+                            <span class="joint-status">
+                                NORMAL
+                            </span>
+
+                        </div>
+
+                        <div class="joint-indicator">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+                    <div class="joint-card normal">
+
+                        <div class="joint-number">
+                            J2
+                        </div>
+
+                        <div class="joint-info">
+
+                            <strong>
+                                Joint 2
+                            </strong>
+
+                            <span class="joint-status">
+                                NORMAL
+                            </span>
+
+                        </div>
+
+                        <div class="joint-indicator">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+                    <div class="joint-card normal">
+
+                        <div class="joint-number">
+                            J3
+                        </div>
+
+                        <div class="joint-info">
+
+                            <strong>
+                                Joint 3
+                            </strong>
+
+                            <span class="joint-status">
+                                NORMAL
+                            </span>
+
+                        </div>
+
+                        <div class="joint-indicator">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+                    <div class="joint-card normal">
+
+                        <div class="joint-number">
+                            J4
+                        </div>
+
+                        <div class="joint-info">
+
+                            <strong>
+                                Joint 4
+                            </strong>
+
+                            <span class="joint-status">
+                                NORMAL
+                            </span>
+
+                        </div>
+
+                        <div class="joint-indicator">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+                    <div class="joint-card normal">
+
+                        <div class="joint-number">
+                            J5
+                        </div>
+
+                        <div class="joint-info">
+
+                            <strong>
+                                Joint 5
+                            </strong>
+
+                            <span class="joint-status">
+                                NORMAL
+                            </span>
+
+                        </div>
+
+                        <div class="joint-indicator">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- OVERVIEW -->
+
+            <div class="overview-grid">
+
+
+                <div class="panel overview-card">
+
+                    <span class="eyebrow">
+                        TODAY'S OVERVIEW
+                    </span>
+
+                    <div class="overview-number">
+                        <span id="alerts-total">
+                            0
+                        </span>
+                    </div>
+
+                    <span>
+                        Total alerts
+                    </span>
+
+                </div>
+
+
+                <div class="panel overview-card warning-card">
+
+                    <span class="eyebrow">
+                        WARNINGS
+                    </span>
+
+                    <div class="overview-number">
+                        <span id="alerts-warning">
+                            0
+                        </span>
+                    </div>
+
+                    <span>
+                        Warning events
+                    </span>
+
+                </div>
+
+
+                <div class="panel overview-card critical-card">
+
+                    <span class="eyebrow">
+                        CRITICAL
+                    </span>
+
+                    <div class="overview-number">
+                        <span id="alerts-critical">
+                            0
+                        </span>
+                    </div>
+
+                    <span>
+                        Critical events
+                    </span>
+
+                </div>
+
+
+                <div class="panel overview-card">
+
+                    <span class="eyebrow">
+                        SYSTEM RISK
+                    </span>
+
+                    <div
+                        class="risk-number"
+                        id="risk-level"
+                    >
+                        NORMAL
+                    </div>
+
+                    <span>
+                        Current risk level
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- RECENT ALERT -->
+
+            <div class="panel">
+
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            EVENT MONITORING
+                        </span>
+
+                        <h3>
+                            Recent Alerts
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        class="outline-button"
+                        data-action="view-alert"
+                    >
+                        View All Alerts
+                    </button>
+
+                </div>
+
+
+                <div id="recent-alerts-list">
+
+                    <div class="empty-state">
+                        No alerts recorded yet.
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             LIVE FEED PAGE
+        ================================================== -->
+
+        <section
+            id="page-live-feed"
+            class="app-page"
+            style="display:none;"
+        >
+
+
+            <div class="page-intro">
+
+                <span class="eyebrow">
+                    COMPUTER VISION
+                </span>
+
+                <h3>
+                    Live Feed
+                </h3>
+
+                <p>
+                    Camera-based conveyor inspection and AI detection.
+                    The camera will be activated when the
+                    physical vision module is connected.
+                </p>
+
+            </div>
+
+
+            <div class="live-grid">
+
+
+                <div class="panel large-camera">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Camera Feed
+                        </h3>
+
+                        <span
+                            class="live-badge"
+                            id="camera-status"
+                        >
+                            STANDBY
+                        </span>
+
+                    </div>
+
+
+                    <div class="camera-live-wrapper large">
+
+                        <img
+                            id="live-camera-feed"
+                            class="camera-live-image"
+                            src="/api/camera/feed"
+                            alt="BELTSENTINEL AI live camera feed"
+                        >
+
+                        <div
+                            id="camera-offline-message"
+                            class="camera-offline-overlay"
+                            style="display:none;"
+                        >
+                            CAMERA NOT AVAILABLE
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Detection Details
+                        </h3>
+
+                    </div>
+
+
+                    <div class="big-detection">
+
+                        <span>
+                            DETECTION
+                        </span>
+
+                        <strong id="live-detection-type">
+                            NORMAL
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-list">
+
+                        <div>
+
+                            <span>
+                                Confidence
+                            </span>
+
+                            <strong id="live-confidence">
+                                0.0%
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Joint
+                            </span>
+
+                            <strong id="live-joint">
+                                None
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Status
+                            </span>
+
+                            <strong id="live-risk">
+                                NORMAL
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Encoder Position
+                            </span>
+
+                            <strong
+                                id="live-encoder-position"
+                            >
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="telemetry-grid compact">
+
+                <div class="metric-card">
+
+                    <span>
+                        Temperature
+                    </span>
+
+                    <strong id="live-temperature">
+                        0.0 °C
+                    </strong>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <span>
+                        Humidity
+                    </span>
+
+                    <strong id="live-humidity">
+                        0.0 %
+                    </strong>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <span>
+                        Vibration
+                    </span>
+
+                    <strong id="live-vibration">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <span>
+                        Acoustic
+                    </span>
+
+                    <strong id="live-acoustic">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <span>
+                        Motor Current
+                    </span>
+
+                    <strong id="live-current">
+                        0.00 A
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ANALYTICS PAGE
+        ================================================== -->
+
+        <section
+            id="page-analytics"
+            class="app-page"
+            style="display:none;"
+        >
+
+
+            <div class="page-intro">
+
+                <span class="eyebrow">
+                    DATA ANALYTICS
+                </span>
+
+                <h3>
+                    Conveyor Analytics
+                </h3>
+
+                <p>
+                    Live statistics calculated from telemetry
+                    received by the backend.
+                </p>
+
+            </div>
+
+
+            <div class="analytics-summary">
+
+
+                <div class="panel stat-panel">
+
+                    <span>
+                        Temperature
+                    </span>
+
+                    <strong id="analytics-temperature">
+                        0.0 °C
+                    </strong>
+
+                    <small>
+                        Latest reading
+                    </small>
+
+                </div>
+
+
+                <div class="panel stat-panel">
+
+                    <span>
+                        Humidity
+                    </span>
+
+                    <strong id="analytics-humidity">
+                        0.0 %
+                    </strong>
+
+                    <small>
+                        Latest reading
+                    </small>
+
+                </div>
+
+
+                <div class="panel stat-panel">
+
+                    <span>
+                        Vibration
+                    </span>
+
+                    <strong id="analytics-vibration">
+                        0
+                    </strong>
+
+                    <small>
+                        Latest events
+                    </small>
+
+                </div>
+
+
+                <div class="panel stat-panel">
+
+                    <span>
+                        Motor Current
+                    </span>
+
+                    <strong id="analytics-current">
+                        0.00 A
+                    </strong>
+
+                    <small>
+                        Latest reading
+                    </small>
+
+                </div>
+
+
+                <div class="panel stat-panel">
+
+                    <span>
+                        Encoder
+                    </span>
+
+                    <strong id="analytics-speed">
+                        0 pulses
+                    </strong>
+
+                    <small>
+                        Current position
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ==================================================
+                 INDUSTRIAL TREND GRAPHS
+            ================================================== -->
+
+            <div class="scada-graphs-header panel">
+
+                <div>
+                    <span class="eyebrow">TREND RECORDER</span>
+                    <h3>Continuous Sensor &amp; AI Trends</h3>
+                    <p>Historical values recorded by the BELTSENTINEL AI monitoring system.</p>
+                </div>
+
+                <div class="recording-indicator">
+                    <span class="recording-lamp"></span>
+                    <strong id="graph-recording-status">RECORDING</strong>
+                    <span id="graph-sample-count">0 samples</span>
+                </div>
+
+            </div>
+
+            <div class="analytics-charts-grid">
+
+                <div class="panel chart-panel">
+                    <div class="panel-header">
+                        <div>
+                            <span class="eyebrow">PROCESS SENSOR</span>
+                            <h3>Temperature &amp; Humidity</h3>
+                        </div>
+                        <span class="chart-tag">DHT11</span>
+                    </div>
+                    <canvas id="chart-temp-humidity"></canvas>
+                </div>
+
+                <div class="panel chart-panel">
+                    <div class="panel-header">
+                        <div>
+                            <span class="eyebrow">MECHANICAL CONDITION</span>
+                            <h3>Vibration &amp; Acoustic</h3>
+                        </div>
+                        <span class="chart-tag">SW-420 / LM393</span>
+                    </div>
+                    <canvas id="chart-vibration-acoustic"></canvas>
+                </div>
+
+                <div class="panel chart-panel">
+                    <div class="panel-header">
+                        <div>
+                            <span class="eyebrow">DRIVE MONITOR</span>
+                            <h3>Motor Current</h3>
+                        </div>
+                        <span class="chart-tag">ACS712</span>
+                    </div>
+                    <canvas id="chart-current"></canvas>
+                </div>
+
+                <div class="panel chart-panel">
+                    <div class="panel-header">
+                        <div>
+                            <span class="eyebrow">POSITION / SPEED</span>
+                            <h3>Encoder Pulses</h3>
+                        </div>
+                        <span class="chart-tag">ENCODER</span>
+                    </div>
+                    <canvas id="chart-encoder"></canvas>
+                </div>
+
+                <div class="panel chart-panel chart-wide">
+                    <div class="panel-header">
+                        <div>
+                            <span class="eyebrow">AI INSPECTION</span>
+                            <h3>Detection Confidence</h3>
+                        </div>
+                        <span class="chart-tag">YOLO</span>
+                    </div>
+                    <canvas id="chart-detection-confidence"></canvas>
+                </div>
+
+                <div class="panel chart-panel chart-wide">
+                    <div class="panel-header">
+                        <div>
+                            <span class="eyebrow">AI EVENT LOG</span>
+                            <h3>Detection Events by Type</h3>
+                        </div>
+                        <span class="chart-tag">HISTORY</span>
+                    </div>
+                    <canvas id="chart-detection-events"></canvas>
+                </div>
+
+            </div>
+
+
+            <div class="analytics-grid">
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                TELEMETRY
+                            </span>
+
+                            <h3>
+                                Recent Sensor Readings
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="telemetry-table-container"
+                        class="table-container"
+                    >
+
+                        <div class="empty-state">
+                            Waiting for telemetry data...
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                RISK ENGINE
+                            </span>
+
+                            <h3>
+                                Current Risk Analysis
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="risk-display">
+
+                        <strong id="analytics-risk">
+                            NORMAL
+                        </strong>
+
+                        <span>
+                            Risk Score
+                        </span>
+
+                        <div class="risk-progress">
+
+                            <div
+                                id="risk-progress-fill"
+                            ></div>
+
+                        </div>
+
+                        <b id="analytics-risk-score">
+                            0 / 100
+                        </b>
+
+                    </div>
+
+
+                    <div
+                        id="analytics-reasons"
+                        class="reason-list"
+                    >
+
+                        <div class="empty-state">
+                            No abnormal conditions.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ALERTS PAGE
+        ================================================== -->
+
+        <section
+            id="page-alerts"
+            class="app-page"
+            style="display:none;"
+        >
+
+
+            <div class="page-intro">
+
+                <span class="eyebrow">
+                    EVENT MANAGEMENT
+                </span>
+
+                <h3>
+                    Alert Center
+                </h3>
+
+                <p>
+                    All recorded system alerts from the
+                    BELTSENTINEL AI backend.
+                </p>
+
+            </div>
+
+
+            <div class="overview-grid">
+
+
+                <div class="panel overview-card">
+
+                    <span class="eyebrow">
+                        TOTAL
+                    </span>
+
+                    <div
+                        class="overview-number"
+                        id="alerts-page-total"
+                    >
+                        0
+                    </div>
+
+                    <span>
+                        Recorded alerts
+                    </span>
+
+                </div>
+
+
+                <div class="panel overview-card warning-card">
+
+                    <span class="eyebrow">
+                        WARNING
+                    </span>
+
+                    <div
+                        class="overview-number"
+                        id="alerts-page-warning"
+                    >
+                        0
+                    </div>
+
+                    <span>
+                        Warning alerts
+                    </span>
+
+                </div>
+
+
+                <div class="panel overview-card critical-card">
+
+                    <span class="eyebrow">
+                        CRITICAL
+                    </span>
+
+                    <div
+                        class="overview-number"
+                        id="alerts-page-critical"
+                    >
+                        0
+                    </div>
+
+                    <span>
+                        Critical alerts
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="panel">
+
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            ALERT HISTORY
+                        </span>
+
+                        <h3>
+                            Alert History
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="outline-button"
+                        onclick="fetchAlerts()"
+                    >
+                        Refresh
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="alerts-table-container"
+                    class="table-container"
+                >
+
+                    <div class="empty-state">
+                        No alerts recorded.
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             REPORTS PAGE
+        ================================================== -->
+
+        <section
+            id="page-reports"
+            class="app-page"
+            style="display:none;"
+        >
+
+
+            <div class="page-intro">
+
+                <span class="eyebrow">
+                    SYSTEM REPORTING
+                </span>
+
+                <h3>
+                    Reports
+                </h3>
+
+                <p>
+                    Summary generated from the local
+                    BELTSENTINEL AI database.
+                </p>
+
+            </div>
+
+
+            <div class="report-header panel">
+
+
+                <div>
+
+                    <span class="eyebrow">
+                        BELTSENTINEL AI
+                    </span>
+
+                    <h3>
+                        Maintenance &amp; Monitoring Report
+                    </h3>
+
+                    <p id="report-generated">
+                        Generated: --
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="primary-button"
+                    onclick="downloadReport()"
+                >
+                    Export Report
+                </button>
+
+            </div>
+
+
+            <div class="analytics-summary">
+
+
+                <div class="panel stat-panel">
+
+                    <span>
+                        Telemetry Records
+                    </span>
+
+                    <strong id="report-telemetry-count">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="panel stat-panel">
+
+                    <span>
+                        Total Alerts
+                    </span>
+
+                    <strong id="report-alert-count">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="panel stat-panel">
+
+                    <span>
+                        Critical Alerts
+                    </span>
+
+                    <strong id="report-critical-count">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="panel stat-panel">
+
+                    <span>
+                        AI Detections
+                    </span>
+
+                    <strong id="report-detection-count">
+                        0
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="report-grid">
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Joint Status
+                        </h3>
+
+                    </div>
+
+
+                    <div
+                        id="report-joints"
+                        class="report-joints"
+                    >
+
+                        Loading...
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+                            System Configuration
+                        </h3>
+
+                    </div>
+
+
+                    <div class="detail-list">
+
+                        <div>
+
+                            <span>
+                                Operating Mode
+                            </span>
+
+                            <strong id="report-mode">
+                                SIMULATION
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Backend
+                            </span>
+
+                            <strong>
+                                READY
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Database
+                            </span>
+
+                            <strong>
+                                READY
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Joint Count
+                            </span>
+
+                            <strong>
+                                5
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SETTINGS PAGE
+        ================================================== -->
+
+        <section
+            id="page-settings"
+            class="app-page"
+            style="display:none;"
+        >
+
+
+            <div class="page-intro">
+
+                <span class="eyebrow">
+                    SYSTEM CONFIGURATION
+                </span>
+
+                <h3>
+                    System Settings
+                </h3>
+
+                <p>
+                    Current configuration and service status.
+                </p>
+
+            </div>
+
+
+            <div class="settings-grid">
+
+
+                <div class="panel">
+
+
+                    <div class="panel-header">
+
+                        <h3>
+                            System Information
+                        </h3>
+
+                    </div>
+
+
+                    <div class="detail-list">
+
+
+                        <div>
+
+                            <span>
+                                System
+                            </span>
+
+                            <strong>
+                                BELTSENTINEL AI
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Operating Mode
+                            </span>
+
+                            <strong id="settings-mode">
+                                SIMULATION
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Five-Joint Monitoring
+                            </span>
+
+                            <strong>
+                                ENABLED
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Database
+                            </span>
+
+                            <strong id="settings-database">
+                                READY
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="panel">
+
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Service Health
+                        </h3>
+
+                    </div>
+
+
+                    <div
+                        id="service-health"
+                        class="health-list"
+                    >
+
+                        <div class="health-row">
+
+                            <span>
+                                Backend
+                            </span>
+
+                            <strong class="health-ok">
+                                READY
+                            </strong>
+
+                        </div>
+
+
+                        <div class="health-row">
+
+                            <span>
+                                Database
+                            </span>
+
+                            <strong class="health-ok">
+                                READY
+                            </strong>
+
+                        </div>
+
+
+                        <div class="health-row">
+
+                            <span>
+                                Anomaly Engine
+                            </span>
+
+                            <strong class="health-ok">
+                                READY
+                            </strong>
+
+                        </div>
+
+
+                        <div class="health-row">
+
+                            <span>
+                                Fusion Engine
+                            </span>
+
+                            <strong class="health-ok">
+                                READY
+                            </strong>
+
+                        </div>
+
+
+                        <div class="health-row">
+
+                            <span>
+                                Joint Tracker
+                            </span>
+
+                            <strong class="health-ok">
+                                READY
+                            </strong>
+
+                        </div>
+
+
+                        <div class="health-row">
+
+                            <span>
+                                YOLO
+                            </span>
+
+                            <strong
+                                id="settings-yolo"
+                                class="health-standby"
+                            >
+                                STANDBY
+                            </strong>
+
+                        </div>
+
+
+                        <div class="health-row">
+
+                            <span>
+                                Camera
+                            </span>
+
+                            <strong
+                                id="settings-camera"
+                                class="health-standby"
+                            >
+                                STANDBY
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="panel">
+
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Joint Calibration
+                        </h3>
+
+                    </div>
+
+
+                    <div
+                        id="settings-calibration"
+                        class="calibration-list"
+                    >
+
+                        Loading...
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="panel">
+
+
+                    <div class="panel-header">
+
+                        <h3>
+                            Sensor Configuration
+                        </h3>
+
+                    </div>
+
+
+                    <div class="sensor-config-list">
+
+
+                        <div>
+                            <strong>
+                                PEC11R
+                            </strong>
+
+                            <span>
+                                Encoder / localization
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <strong>
+                                SW-420
+                            </strong>
+
+                            <span>
+                                Vibration event detection
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <strong>
+                                DHT11
+                            </strong>
+
+                            <span>
+                                Temperature / humidity
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <strong>
+                                ACS712
+                            </strong>
+
+                            <span>
+                                Motor current
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <strong>
+                                LM393
+                            </strong>
+
+                            <span>
+                                Acoustic event detection
+                            </span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ==================================================
+             QUICK GRAPH CONSOLE
+        ================================================== -->
+
+        <button
+            id="graph-console-button"
+            class="graph-console-button"
+            type="button"
+            aria-label="Open live graph console"
+            title="Open live graph console"
+        >
+            <span class="graph-console-bars">▥</span>
+            <span class="graph-console-label">GRAPH</span>
+        </button>
+
+
+        <div
+            id="graph-console-overlay"
+            class="graph-console-overlay"
+            aria-hidden="true"
+        >
+            <div class="graph-console-window">
+
+                <div class="graph-console-header">
+                    <div>
+                        <span class="eyebrow">BELTSENTINEL AI / SCADA TREND CONSOLE</span>
+                        <h2>Live &amp; Recorded Process Trends</h2>
+                        <p>Historical telemetry and AI detection records from the SQLite monitoring database.</p>
+                    </div>
+
+                    <div class="graph-console-actions">
+                        <span class="recording-indicator compact">
+                            <span class="recording-lamp"></span>
+                            RECORDING
+                        </span>
+                        <button id="graph-console-close" class="outline-button" type="button">CLOSE</button>
+                    </div>
+                </div>
+
+                <div class="console-status-strip">
+                    <span>TELEMETRY SAMPLES <strong id="console-telemetry-count">0</strong></span>
+                    <span>AI RECORDS <strong id="console-detection-count">0</strong></span>
+                    <span>UPDATE <strong>1 SEC</strong></span>
+                </div>
+
+                <div class="console-chart-grid">
+                    <div class="panel chart-panel">
+                        <div class="panel-header"><div><span class="eyebrow">DHT11</span><h3>Temperature &amp; Humidity</h3></div></div>
+                        <canvas id="console-temp-humidity"></canvas>
+                    </div>
+                    <div class="panel chart-panel">
+                        <div class="panel-header"><div><span class="eyebrow">CONDITION</span><h3>Vibration &amp; Acoustic</h3></div></div>
+                        <canvas id="console-vibration-acoustic"></canvas>
+                    </div>
+                    <div class="panel chart-panel">
+                        <div class="panel-header"><div><span class="eyebrow">ACS712</span><h3>Motor Current</h3></div></div>
+                        <canvas id="console-current"></canvas>
+                    </div>
+                    <div class="panel chart-panel">
+                        <div class="panel-header"><div><span class="eyebrow">ENCODER</span><h3>Belt Position</h3></div></div>
+                        <canvas id="console-encoder"></canvas>
+                    </div>
+                    <div class="panel chart-panel chart-wide">
+                        <div class="panel-header"><div><span class="eyebrow">YOLO</span><h3>Detection Confidence</h3></div></div>
+                        <canvas id="console-detection-confidence"></canvas>
+                    </div>
+                    <div class="panel chart-panel chart-wide">
+                        <div class="panel-header"><div><span class="eyebrow">EVENT HISTORY</span><h3>Detection Events by Type</h3></div></div>
+                        <canvas id="console-detection-events"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ==================================================
+             FOOTER
+        ================================================== -->
+
+        <footer class="footer">
+
+            <span>
+                BELTSENTINEL AI
+            </span>
+
+            <span>
+                Intelligent Conveyor Monitoring
+            </span>
+
+            <span>
+                Last update:
+                <strong id="last-update">
+                    --
+                </strong>
+            </span>
+
+        </footer>
+
+
+    </main>
+
+</div>
+
+
+<script src="/js/dashboard.js"></script>
+
+
+<script src="/js/health_intelligence.js"></script>
+<script src="/js/maintenance_reports.js"></script>
+</body>
+
+</html>

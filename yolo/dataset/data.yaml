@@ -1,0 +1,11 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 4
+
+names:
+  0: belt_crack
+  1: belt_tear
+  2: edge_damage
+  3: joint_damage
