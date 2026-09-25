@@ -1,0 +1,935 @@
+{
+    "system": "BELTSENTINEL AI",
+    "generated_at": "2026-09-20T14:04:02.098Z",
+    "mode": "LIVE",
+    "telemetry_records": {
+        "acoustic_events_per_sec": 0,
+        "acoustic_raw": 0,
+        "current_amps": 0,
+        "encoder_pulses": 0,
+        "humidity": 0,
+        "motor_pwm": 150,
+        "motor_running": false,
+        "temperature": 0,
+        "vibration_events_per_sec": 0
+    },
+    "risk": {
+        "camera_score": 40,
+        "confidence": 52.77,
+        "damage_detected": true,
+        "detection": "joint_damage",
+        "joint": "Joint 1",
+        "message": "AI detected joint_damage near Joint 1.",
+        "reasons": [
+            "Camera detected joint_damage with 52.77% confidence"
+        ],
+        "risk_level": "WARNING",
+        "risk_score": 40,
+        "sensor_score": 0,
+        "status": "DAMAGED"
+    },
+    "detection": {
+        "confidence": 52.77,
+        "detection": "joint_damage",
+        "joint": "Joint 1",
+        "source": "CAMERA_YOLO",
+        "status": "WARNING",
+        "timestamp": "2026-09-20T19:34:01.637892"
+    },
+    "joints": {
+        "1": {
+            "damage_source": "AI/FUSION",
+            "id": 1,
+            "is_current": false,
+            "name": "Joint 1",
+            "position": 4706,
+            "status": "DAMAGED"
+        },
+        "2": {
+            "damage_source": null,
+            "id": 2,
+            "is_current": false,
+            "name": "Joint 2",
+            "position": 4743,
+            "status": "NORMAL"
+        },
+        "3": {
+            "damage_source": null,
+            "id": 3,
+            "is_current": false,
+            "name": "Joint 3",
+            "position": 4763,
+            "status": "NORMAL"
+        },
+        "4": {
+            "damage_source": null,
+            "id": 4,
+            "is_current": false,
+            "name": "Joint 4",
+            "position": 4803,
+            "status": "NORMAL"
+        },
+        "5": {
+            "damage_source": null,
+            "id": 5,
+            "is_current": false,
+            "name": "Joint 5",
+            "position": 4822,
+            "status": "NORMAL"
+        }
+    },
+    "alerts": [
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 149,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-20T19:26:59.732482"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 148,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-20T19:20:04.673278"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 147,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-20T19:14:22.298720"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 146,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-20T18:10:07.713563"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 145,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-19T00:48:29.026761"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 144,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-19T00:39:39.054841"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 143,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-19T00:32:50.412246"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 142,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-19T00:22:29.499877"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 141,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-19T00:18:27.944776"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 140,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-19T00:14:23.427931"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 139,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-19T00:02:27.458108"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 138,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-18T23:52:43.381718"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 137,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-18T23:22:14.696898"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 136,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-18T23:19:18.190281"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 135,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-18T23:15:16.970366"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 134,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-18T22:10:06.652577"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 133,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-18T22:03:07.621035"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 132,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-18T21:41:34.530402"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 131,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-18T21:27:43.800146"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 130,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-18T21:15:33.227807"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 129,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-12T11:57:42.092649"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 128,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-11T20:57:18.913598"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 127,
+            "joint": "Joint 5",
+            "message": "AI detected joint_damage near Joint 5.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T15:50:45.869409"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 126,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T14:19:28.525088"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 125,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T14:10:54.316454"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 124,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:51:52.669976"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 123,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:51:30.203244"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 122,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:51:14.108262"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 121,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:29:12.043658"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 120,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:29:11.022242"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 119,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:28:38.015376"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 118,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:44.043921"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 117,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:30.085204"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 116,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:29.038281"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 115,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:27.040722"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 114,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:26.037952"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 113,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:25.020604"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 112,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:23.028482"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 111,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:22.019320"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 110,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:21.024367"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 109,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:19.991503"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 108,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:12.091217"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 107,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:27:11.023766"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 106,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-10T13:23:13.508428"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 105,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:55:28.311566"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 104,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:54:11.263287"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 103,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:54:08.546684"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 102,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:42:09.328831"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 101,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:42:05.070527"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 100,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:42:01.349229"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 99,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:41:54.361036"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 98,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:41:21.154639"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 97,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:41:12.257110"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 96,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-09T22:41:08.395888"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 95,
+            "joint": "Joint 3",
+            "message": "AI detected joint_damage near Joint 3.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:53.899980"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 94,
+            "joint": "Joint 2",
+            "message": "AI detected joint_damage near Joint 2.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:53.065819"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 93,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:50.824974"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 92,
+            "joint": "Joint 5",
+            "message": "AI detected joint_damage near Joint 5.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:50.540680"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 91,
+            "joint": "Joint 4",
+            "message": "AI detected joint_damage near Joint 4.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:40.241876"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 90,
+            "joint": "Joint 3",
+            "message": "AI detected joint_damage near Joint 3.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:38.880142"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 89,
+            "joint": "Joint 2",
+            "message": "AI detected joint_damage near Joint 2.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:37.487150"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 88,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:36.050178"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 87,
+            "joint": "Joint 5",
+            "message": "AI detected joint_damage near Joint 5.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:33.987106"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 86,
+            "joint": "Joint 4",
+            "message": "AI detected joint_damage near Joint 4.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:32.776141"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 85,
+            "joint": "Joint 3",
+            "message": "AI detected joint_damage near Joint 3.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:31.659963"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 84,
+            "joint": "Joint 2",
+            "message": "AI detected joint_damage near Joint 2.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:24:29.993434"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 83,
+            "joint": "Joint 5",
+            "message": "AI detected joint_damage near Joint 5.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:23:03.373530"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 82,
+            "joint": "Joint 5",
+            "message": "AI detected joint_damage near Joint 5.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T11:22:44.595413"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 81,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T10:16:25.867873"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 80,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T10:16:21.599655"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 79,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T10:02:56.183457"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 78,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T10:02:04.551972"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 77,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T10:01:37.137621"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 76,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T10:01:35.129573"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 75,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T10:00:06.062469"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 74,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:58:20.692665"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 73,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:58:17.946699"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 72,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:58:12.107646"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 71,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:58:09.104870"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 70,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:58:03.156475"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 69,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:58:01.103703"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 68,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:59.118633"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 67,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:51.061997"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 66,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:49.074405"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 65,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:48.116609"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 64,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:33.090014"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 63,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:31.270054"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 62,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:30.133822"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 61,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:29.111519"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 60,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:27.099091"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 59,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:25.117552"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 58,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:24.102722"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 57,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:22.329405"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 56,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:21.105659"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 55,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:18.094717"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 54,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:17.130931"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 53,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:14.086219"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 52,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:13.083504"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 51,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:12.127307"
+        },
+        {
+            "alert_type": "CAMERA_AI",
+            "id": 50,
+            "joint": "Joint 1",
+            "message": "AI detected joint_damage near Joint 1.",
+            "severity": "WARNING",
+            "timestamp": "2026-09-08T09:57:10.119663"
+        }
+    ],
+    "camera": {
+        "camera": {
+            "available": true,
+            "camera_index": 1,
+            "error": null,
+            "height": 480,
+            "running": true,
+            "width": 640
+        },
+        "inference": {
+            "camera_available": true,
+            "detections": [
+                {
+                    "bbox": {
+                        "x1": 682,
+                        "x2": 1706,
+                        "y1": 0,
+                        "y2": 1440
+                    },
+                    "class_id": 3,
+                    "class_name": "joint_damage",
+                    "confidence": 0.5277
+                },
+                {
+                    "bbox": {
+                        "x1": 981,
+                        "x2": 1704,
+                        "y1": 0,
+                        "y2": 1425
+                    },
+                    "class_id": 3,
+                    "class_name": "joint_damage",
+                    "confidence": 0.2854
+                }
+            ],
+            "model_loaded": true,
+            "status": "OK",
+            "timestamp": 1789913041.412013
+        },
+        "yolo": {
+            "classes": {
+                "0": "belt_crack",
+                "1": "belt_tear",
+                "2": "edge_damage",
+                "3": "joint_damage"
+            },
+            "confidence_threshold": 0.25,
+            "error": null,
+            "loaded": true,
+            "model_path": "C:\\BELTSENTINEL_AI\\models\\best.pt"
+        }
+    }
+}
