@@ -59,7 +59,6 @@ Traditional inspection approaches may depend heavily on periodic manual checks. 
 
 BeltSentinel AI integrates multiple monitoring layers into a single system:
 
-```text
                  ┌─────────────────────┐
                  │   Conveyor Belt     │
                  └──────────┬──────────┘
@@ -93,7 +92,7 @@ BeltSentinel AI integrates multiple monitoring layers into a single system:
 
 
 
-🔍 AI-Based Damage Detection
+# 🔍 AI-Based Damage Detection
 The computer-vision module uses Ultralytics YOLO to identify visible conveyor belt abnormalities from camera input.
 Supported damage classes
 Class	Description
@@ -104,7 +103,7 @@ Joint Damage	Visible abnormalities around belt joints
 Detection results can be associated with belt/joint locations and displayed through the monitoring dashboard.
 
 
-📡 ESP32 Sensor Telemetry
+# 📡 ESP32 Sensor Telemetry
 The prototype uses an ESP32-based telemetry layer for collecting conveyor-related sensor information.
 Current prototype sensors
 - Rotary Encoder
@@ -123,7 +122,7 @@ Telemetry includes parameters such as:
 The current prototype transfers telemetry through USB serial communication between the ESP32 and the monitoring computer.
 
 
-🎯 Joint-Level Monitoring
+# 🎯 Joint-Level Monitoring
 A key feature of BeltSentinel AI is location-aware conveyor joint monitoring.
 The physical prototype contains:
 - 120 cm mini conveyor belt
@@ -134,7 +133,7 @@ This enables the system to associate detected abnormalities with specific belt/j
 For demonstration purposes, damage has been intentionally placed on or near the prototype joints so that the joint-level monitoring functionality can be visibly demonstrated.
 
 
-🧠 AI + Sensor-Based Risk Assessment
+# 🧠 AI + Sensor-Based Risk Assessment
 BeltSentinel AI combines available visual detection and telemetry information within its monitoring and risk-analysis pipeline.
 The dashboard presents conveyor conditions using three operational levels:
 🟢 Normal
@@ -146,7 +145,7 @@ A significant condition requiring immediate inspection or maintenance attention 
 This risk-oriented presentation helps convert raw detection and telemetry data into information that is easier for operators and maintenance personnel to interpret.
 
 
-📊 Intelligent Monitoring Dashboard
+# 📊 Intelligent Monitoring Dashboard
 The BeltSentinel AI web dashboard provides a centralized interface for monitoring the conveyor system.
 Dashboard capabilities
 - Live sensor telemetry
@@ -168,7 +167,7 @@ Dashboard capabilities
 - Mobile-accessible monitoring interface
 
 
-🚨 Alerts & Notifications
+# 🚨 Alerts & Notifications
 The system provides real-time alerts for important conveyor conditions.
 Alerts can include:
 - Warning conditions
@@ -179,7 +178,7 @@ Alerts can include:
 This provides operators with a quick way to identify conditions requiring attention.
 
 
-📈 Analytics & Maintenance Intelligence
+# 📈 Analytics & Maintenance Intelligence
 Historical system information is used to provide:
 - Sensor trends
 - AI detection history
@@ -190,7 +189,7 @@ Historical system information is used to provide:
 The system also supports structured report generation for monitoring and maintenance workflows.
 
 
-📄 Reports & Data Export
+# 📄 Reports & Data Export
 BeltSentinel AI supports exporting monitoring information in:
 - CSV
 - JSON
@@ -204,7 +203,7 @@ Reports can contain information such as:
 This allows monitoring information to be retained for further analysis and documentation.
 
 
-🏗️ Prototype Hardware
+# 🏗️ Prototype Hardware
 The current demonstration prototype consists of:
 Component	Purpose
 120 cm Mini Conveyor	Physical conveyor demonstration
@@ -218,7 +217,7 @@ L298N Motor Driver	DC motor control
 DC Motor	Conveyor movement
 
 
-🛠️ Technology Stack
+# 🛠️ Technology Stack
 Artificial Intelligence
 - Ultralytics YOLO
 - Computer Vision
@@ -244,7 +243,7 @@ Dataset & Model Preparation
 - Model training and validation
 
 
-🔄 System Workflow
+# 🔄 System Workflow
 Camera
    │
    ▼
@@ -279,7 +278,7 @@ ESP32 ──► Sensor Telemetry
    Alerts Analytics Reports
 
 
-🧪 Prototype Demonstration
+# 🧪 Prototype Demonstration
 The prototype demonstrates the complete monitoring workflow using a 120 cm mini conveyor with five physical joints (J1–J5).
 The demonstration covers:
 1. Conveyor operation
@@ -295,7 +294,7 @@ The demonstration covers:
 11. CSV/JSON data export
 
 
-📁 Repository Structure
+# 📁 Repository Structure
 BELTSENTINEL-AI/
 │
 ├── backend/          # Flask backend and processing
@@ -314,7 +313,7 @@ BELTSENTINEL-AI/
 └── requirements.txt
 
 
-⚙️ Running the Project
+# ⚙️ Running the Project
 1. Clone the repository
 git clone https://github.com/prathmeshghule430/BELTSENTINEL-AI.git
 cd BELTSENTINEL-AI
@@ -332,14 +331,14 @@ http://127.0.0.1:5000/
 Hardware-dependent features require the ESP32, connected sensors, camera, and the appropriate serial configuration.
 
 
-📌 Current Prototype Scope
+# 📌 Current Prototype Scope
 BeltSentinel AI is currently a working prototype and conceptual demonstration.
 The prototype validates the core architecture of:
 AI Vision + Sensor Telemetry + Joint Tracking + Risk Assessment + Dashboard + Alerts + Analytics + Reporting
 The current implementation is intended to demonstrate the feasibility of the proposed approach rather than represent a final industrial deployment.
 
 
-🔮 Future Industrial Extensions
+# 🔮 Future Industrial Extensions
 The architecture can be further extended for real-world mining environments through:
 - Industrial-grade cameras
 - Thermal imaging
@@ -356,5 +355,5 @@ The architecture can be further extended for real-world mining environments thro
 These extensions are considered future development areas for industrial-scale deployment.
 
 
-🎯 Project Objective
+# 🎯 Project Objective
 The objective of BeltSentinel AI is to demonstrate a unified digital approach for continuous conveyor belt condition monitoring and early identification of belt abnormalities, helping provide operators and maintenance personnel with timely, location-aware information through AI, sensor telemetry, analytics, and intelligent visualization.
