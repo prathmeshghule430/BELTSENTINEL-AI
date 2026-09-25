@@ -295,24 +295,24 @@ The demonstration covers:
 
 # 📁 Repository Structure
 
-
+```text
 BELTSENTINEL-AI/
 │
-├── backend/          # Flask backend and processing
-├── camera/           # Camera and vision modules
-├── dashboard/        # Web dashboard
-├── database/         # SQLite database
-├── docs/             # Documentation and results
-├── esp32/            # ESP32 firmware and telemetry
-├── models/           # Trained YOLO model
-├── simulator/        # Sensor simulation utilities
-├── yolo/             # Dataset/model training utilities
+├── backend/              # Flask backend and processing
+├── camera/               # Camera and vision modules
+├── dashboard/            # Web dashboard
+├── database/             # SQLite database
+├── docs/                 # Documentation and results
+├── esp32/                # ESP32 firmware and telemetry
+├── models/               # Trained YOLO models
+├── simulator/            # Sensor simulation utilities
+├── yolo/                 # Dataset and model training utilities
 │
 ├── .env.example
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-
+```
 
 # ⚙️ Running the Project
 1. Clone the repository
