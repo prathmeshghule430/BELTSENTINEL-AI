@@ -14,7 +14,8 @@ Project: BeltSentinel AI
 Problem Statement: 26008
 Domain: Conveyor Belt Monitoring and Damage Detection
 Focus: AI-Based Condition Monitoring & Early Warning
-👥 Team BeltSentinel
+👥 Team iNNOVATORS_0078
+BELTSENTINEL-AI
 Developed as a Smart India Hackathon 2026 prototype.
 
 📜 Disclaimer
