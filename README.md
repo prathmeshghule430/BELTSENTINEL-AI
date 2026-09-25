@@ -244,6 +244,8 @@ Dataset & Model Preparation
 
 
 # 🔄 System Workflow
+
+
 Camera
    │
    ▼
@@ -295,6 +297,8 @@ The demonstration covers:
 
 
 # 📁 Repository Structure
+
+
 BELTSENTINEL-AI/
 │
 ├── backend/          # Flask backend and processing
