@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['belt_crack', 'belt_tear', 'edge_damage', 'joint_damage']
+
+roboflow:
+  workspace: sumit-gambhire-s-workspace
+  project: beltsentinelai
+  version: 1
+  license: Private
+  url: https://app.roboflow.com/sumit-gambhire-s-workspace/beltsentinelai/1
