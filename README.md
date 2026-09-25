@@ -245,39 +245,36 @@ Dataset & Model Preparation
 
 # 🔄 System Workflow
 
+```mermaid
+flowchart LR
+    A[📷 Camera] --> B[🧠 YOLO AI Detection]
 
-Camera
-   │
-   ▼
-YOLO AI Detection
-   │
-   ├── Crack
-   ├── Tear
-   ├── Edge Damage
-   └── Joint Damage
-            │
-            ▼
-      Joint Localization
-            │
-            │
-ESP32 ──► Sensor Telemetry
-            │
-            ▼
-       Backend Processing
-            │
-            ▼
-      Risk Assessment
-            │
-      ┌─────┼─────┐
-      ▼     ▼     ▼
-   Normal Warning Critical
-            │
-            ▼
-       Dashboard
-            │
-     ┌──────┼──────┐
-     ▼      ▼      ▼
-   Alerts Analytics Reports
+    B --> C[Crack]
+    B --> D[Tear]
+    B --> E[Edge Damage]
+    B --> F[Joint Damage]
+
+    F --> G[📍 Joint Localization]
+
+    H[ESP32] --> I[📡 Sensor Telemetry]
+
+    G --> J[⚙️ Backend Processing]
+    I --> J
+
+    J --> K[⚠️ Risk Assessment]
+
+    K --> L[🟢 Normal]
+    K --> M[🟡 Warning]
+    K --> N[🔴 Critical]
+
+    L --> O[📊 Dashboard]
+    M --> O
+    N --> O
+
+    O --> P[🚨 Alerts]
+    O --> Q[📈 Analytics]
+    O --> R[📄 Reports]
+```
 
 
 # 🧪 Prototype Demonstration
