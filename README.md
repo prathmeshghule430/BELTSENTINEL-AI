@@ -85,11 +85,6 @@ BeltSentinel AI integrates multiple monitoring layers into a single system:
           └────────────── Reports ────────────┘
 ```
 
----
-
-<p align="center">
-  <a href="#demo-dashboard-interface">📸 Go to Dashboard Interface</a>
-</p>
 
 ## 🔍 AI-Based Damage Detection
 The computer-vision module uses Ultralytics YOLO to identify visible conveyor belt abnormalities from camera input.
@@ -403,13 +398,13 @@ The Alerts interface provides a place to review detected issues and system warni
 
 ![BELTSENTINEL AI Alerts](images/Alerts.png)
 
-### 8. Maintenance Reports and Data Export
+### 5. Maintenance Reports and Data Export
 
 The Reports interface supports reviewing monitoring records and maintenance-related information. The project supports CSV and JSON report generation for further analysis and documentation.
 
 ![BELTSENTINEL AI Reports](images/Reports.png)
 
-### 9. System Settings
+### 6. System Settings
 
 The Settings interface provides access to the dashboard's available configuration options for managing the monitoring system.
 
