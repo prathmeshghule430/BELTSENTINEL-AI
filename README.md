@@ -393,7 +393,7 @@ The analytics interface helps users review monitoring information and understand
 ![BELTSENTINEL AI Analytics Overview](images/Analytics1.png)
 ![BELTSENTINEL AI Analytics Trends](images/Analytics2.png)
 ![BELTSENTINEL AI Detailed Analytics](images/Analytics3.png)
-![BELTSENTINEL AI Detailed Analytics](images/Graph Button.png)
+![BELTSENTINEL AI Detailed Analytics Graph Button](<images/Graph Button.png>)
 
 ### 4. Alerts
 
