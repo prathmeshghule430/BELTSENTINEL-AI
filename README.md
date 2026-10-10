@@ -3,15 +3,19 @@ A complete prototype and software demonstration is available through the project
 
 YouTube: https://youtu.be/NYvcRXcdNOI
 
+Demo Dashboard Interface:
+![alt text](images/Dashboard1.png)
+![alt text](images/Dashboard2.png)
+![alt text](<images/Live Feed.png>)
+![alt text](images/Analytics1.png)
+![alt text](images/Analytics2.png)
+![alt text](images/Analytics3.png)
+![alt text](images/Alerts.png)
+![alt text](images/Reports.png)
+![alt text](images/Settings.png)
+
 Demo Dashboard: https://beltsentinel-ai.onrender.com
 
-⚠️ Note – Live Dashboard
-The BELTSENTINEL AI dashboard is hosted on Render. As the hosting service may temporarily spin down after a period of inactivity, the dashboard's first loading may take approximately one minute while the service starts again.
-
-### 💻 Source Code
-The complete project source code is available in this repository.
-GitHub:
-https://github.com/prathmeshghule430/BELTSENTINEL-AI
 
 ### 🏆 Smart India Hackathon 2026
 Project: BeltSentinel AI
@@ -95,6 +99,9 @@ BeltSentinel AI integrates multiple monitoring layers into a single system:
           │                                   │
           └────────────── Reports ────────────┘
 ```
+
+
+
 
 
 ## 🔍 AI-Based Damage Detection
