@@ -1,21 +1,3 @@
-### 📺 Demonstration
-A complete prototype and software demonstration is available through the project's YouTube video.
-
-
-YouTube: https://youtu.be/NYvcRXcdNOI
-
-### 🏆 Smart India Hackathon 2026
-Project: BeltSentinel AI
-Problem Statement: 26008
-Domain: Conveyor Belt Monitoring and Damage Detection
-Focus: AI-Based Condition Monitoring & Early Warning
-### 👥 Team iNNOVATORS_0078
-BELTSENTINEL-AI
-Developed as a Smart India Hackathon 2026 prototype.
-
-## 📜 Disclaimer
-BeltSentinel AI is a prototype developed for demonstration, experimentation, and validation of the proposed monitoring architecture. Performance in real industrial mining environments may vary depending on camera conditions, sensor configuration, conveyor characteristics, environmental conditions, and operational data. Industrial deployment would require appropriate hardware qualification, integration, testing, safety validation, and field trials.
-
 # BELTSENTINEL AI
 ### Intelligent Conveyor Belt Health Monitoring & Early Damage Detection
 
@@ -24,6 +6,13 @@ BeltSentinel AI is a prototype developed for demonstration, experimentation, and
 </p>
 
 ---
+### 📺 Demonstration
+A complete prototype and software demonstration is available through the project's YouTube video.
+
+YouTube: https://youtu.be/NYvcRXcdNOI
+
+## 📜 Disclaimer
+BeltSentinel AI is a prototype developed for demonstration, experimentation, and validation of the proposed monitoring architecture. Performance in real industrial mining environments may vary depending on camera conditions, sensor configuration, conveyor characteristics, environmental conditions, and operational data. Industrial deployment would require appropriate hardware qualification, integration, testing, safety validation, and field trials.
 
 ## 🚀 Overview
 
@@ -163,6 +152,72 @@ The BeltSentinel AI web dashboard provides a centralized interface for monitorin
 - JSON report generation
 - Mobile-accessible monitoring interface
 
+## 📊 Demo Dashboard Interface
+
+The BELTSENTINEL AI dashboard provides a centralized interface for monitoring conveyor belt conditions, viewing AI-based damage detections, analyzing sensor telemetry, managing alerts, and generating maintenance reports. It integrates computer vision and IoT monitoring to support early identification of conveyor belt abnormalities.
+
+### 1. Main Dashboard
+
+The main dashboard provides an overview of the conveyor monitoring system, including system status, available sensor information, belt condition indicators, and important monitoring information.
+
+![BELTSENTINEL AI Main Dashboard](images/Dashboard1.png)
+![BELTSENTINEL AI Dashboard Monitoring](images/Dashboard2.png)
+
+### 2. Live Camera Feed and AI Inspection
+
+The Live Feed interface is intended for visual inspection of the conveyor belt. The camera feed can be used with the YOLO-based vision model to identify visible belt abnormalities, including cracks, tears, edge damage, and joint damage, when detected by the system.
+
+![BELTSENTINEL AI Live Feed](images/Live%20Feed.png)
+
+### 3. Analytics Dashboard
+
+The analytics interface helps users review monitoring information and understand system trends to support condition assessment and maintenance planning.
+
+![BELTSENTINEL AI Analytics Overview](images/Analytics1.png)
+![BELTSENTINEL AI Analytics Trends](images/Analytics2.png)
+![BELTSENTINEL AI Detailed Analytics](images/Analytics3.png)
+![BELTSENTINEL AI Detailed Analytics Graph Button](<images/Graph Button.png>)
+
+### 4. Alerts
+
+The Alerts interface provides a place to review detected issues and system warnings. BELTSENTINEL AI is designed to classify conveyor conditions as **Normal, Warning, or Critical** based on the implemented monitoring and risk-assessment logic.
+
+![BELTSENTINEL AI Alerts](images/Alerts1.png)
+![BELTSENTINEL AI Alerts](images/Alerts2.png)
+
+### 5. Maintenance Reports and Data Export
+
+The Reports interface supports reviewing monitoring records and maintenance-related information. The project supports CSV and JSON report generation for further analysis and documentation.
+
+![BELTSENTINEL AI Reports](images/Reports.png)
+
+### 6. System Settings
+
+The Settings interface provides access to the dashboard's available configuration options for managing the monitoring system.
+
+![BELTSENTINEL AI Settings](images/Settings.png)
+
+---
+
+### How the Dashboard Supports Conveyor Monitoring
+
+- **AI Vision:** Detects visible belt damage using the trained YOLO model.
+- **IoT Sensor Monitoring:** Displays available telemetry from the ESP32 sensor system.
+- **Belt Position Tracking:** Uses encoder information to support belt movement and joint-level monitoring.
+- **Risk Assessment:** Supports Normal, Warning, and Critical condition classification.
+- **Analytics and Alerts:** Helps users review monitoring information and identify potential maintenance needs.
+- **Reporting:** Supports exporting monitoring information in CSV and JSON formats.
+
+The dashboard is part of the BELTSENTINEL AI prototype, developed to demonstrate intelligent conveyor belt monitoring and early warning capabilities for iron ore mining applications.
+
+
+### Demo Live Dashboard
+
+*⚠️Note: The live dashboard may take approximately one minute to load after inactivity because of Render's free hosting environment. Please wait briefly if it does not open immediately.*
+
+**Demo Live Dashboard:**  https://beltsentinel-ai.onrender.com
+
+You can also view the dashboard interface screenshots directly in this README under **Demo Dashboard Interface**.
 
 ## 🚨 Alerts & Notifications
 The system provides real-time alerts for important conveyor conditions.
@@ -365,78 +420,20 @@ The architecture can be further extended for real-world mining environments thro
 - Digital-twin capabilities
 These extensions are considered future development areas for industrial-scale deployment.
 
-
 ## 🎯 Project Objective
 The objective of BeltSentinel AI is to demonstrate a unified digital approach for continuous conveyor belt condition monitoring and early identification of belt abnormalities, helping provide operators and maintenance personnel with timely, location-aware information through AI, sensor telemetry, analytics, and intelligent visualization.
 
-## 📊 Demo Dashboard Interface
+### 🏆 Smart India Hackathon 2026
+Project: BeltSentinel AI
+Problem Statement: 26008
+Domain: Conveyor Belt Monitoring and Damage Detection
+Focus: AI-Based Condition Monitoring & Early Warning
 
-The BELTSENTINEL AI dashboard provides a centralized interface for monitoring conveyor belt conditions, viewing AI-based damage detections, analyzing sensor telemetry, managing alerts, and generating maintenance reports. It integrates computer vision and IoT monitoring to support early identification of conveyor belt abnormalities.
-
-### 1. Main Dashboard
-
-The main dashboard provides an overview of the conveyor monitoring system, including system status, available sensor information, belt condition indicators, and important monitoring information.
-
-![BELTSENTINEL AI Main Dashboard](images/Dashboard1.png)
-![BELTSENTINEL AI Dashboard Monitoring](images/Dashboard2.png)
-
-### 2. Live Camera Feed and AI Inspection
-
-The Live Feed interface is intended for visual inspection of the conveyor belt. The camera feed can be used with the YOLO-based vision model to identify visible belt abnormalities, including cracks, tears, edge damage, and joint damage, when detected by the system.
-
-![BELTSENTINEL AI Live Feed](images/Live%20Feed.png)
-
-### 3. Analytics Dashboard
-
-The analytics interface helps users review monitoring information and understand system trends to support condition assessment and maintenance planning.
-
-![BELTSENTINEL AI Analytics Overview](images/Analytics1.png)
-![BELTSENTINEL AI Analytics Trends](images/Analytics2.png)
-![BELTSENTINEL AI Detailed Analytics](images/Analytics3.png)
-![BELTSENTINEL AI Detailed Analytics Graph Button](<images/Graph Button.png>)
-
-### 4. Alerts
-
-The Alerts interface provides a place to review detected issues and system warnings. BELTSENTINEL AI is designed to classify conveyor conditions as **Normal, Warning, or Critical** based on the implemented monitoring and risk-assessment logic.
-
-![BELTSENTINEL AI Alerts](images/Alerts1.png)
-![BELTSENTINEL AI Alerts](images/Alerts2.png)
-
-### 5. Maintenance Reports and Data Export
-
-The Reports interface supports reviewing monitoring records and maintenance-related information. The project supports CSV and JSON report generation for further analysis and documentation.
-
-![BELTSENTINEL AI Reports](images/Reports.png)
-
-### 6. System Settings
-
-The Settings interface provides access to the dashboard's available configuration options for managing the monitoring system.
-
-![BELTSENTINEL AI Settings](images/Settings.png)
-
----
-
-### How the Dashboard Supports Conveyor Monitoring
-
-- **AI Vision:** Detects visible belt damage using the trained YOLO model.
-- **IoT Sensor Monitoring:** Displays available telemetry from the ESP32 sensor system.
-- **Belt Position Tracking:** Uses encoder information to support belt movement and joint-level monitoring.
-- **Risk Assessment:** Supports Normal, Warning, and Critical condition classification.
-- **Analytics and Alerts:** Helps users review monitoring information and identify potential maintenance needs.
-- **Reporting:** Supports exporting monitoring information in CSV and JSON formats.
-
-The dashboard is part of the BELTSENTINEL AI prototype, developed to demonstrate intelligent conveyor belt monitoring and early warning capabilities for iron ore mining applications.
+### 👥 Team iNNOVATORS_0078
+BELTSENTINEL-AI
+Developed as a Smart India Hackathon 2026 prototype.
 
 
-### Demo Live Dashboard
-
-*⚠️Note: The live dashboard may take approximately one minute to load after inactivity because of Render's free hosting environment. Please wait briefly if it does not open immediately.*
-
-**Demo Live Dashboard:**  https://beltsentinel-ai.onrender.com
-
-You can also view the dashboard interface screenshots directly in this README under **Demo Dashboard Interface**.
-
-Thank you for reviewing BELTSENTINEL AI!
 ---
 
 <p align="center">
