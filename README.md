@@ -372,21 +372,66 @@ These extensions are considered future development areas for industrial-scale de
 ## 🎯 Project Objective
 The objective of BeltSentinel AI is to demonstrate a unified digital approach for continuous conveyor belt condition monitoring and early identification of belt abnormalities, helping provide operators and maintenance personnel with timely, location-aware information through AI, sensor telemetry, analytics, and intelligent visualization.
 
-### Demo Dashboard Interface
+## 📊 Demo Dashboard Interface
 
-![alt text](images/Dashboard1.png)
-![alt text](images/Dashboard2.png)
-![alt text](<images/Live Feed.png>)
-![alt text](images/Analytics1.png)
-![alt text](images/Analytics2.png)
-![alt text](images/Analytics3.png)
-![alt text](images/Alerts.png)
-![alt text](images/Reports.png)
-![alt text](images/Settings.png)
+The BELTSENTINEL AI dashboard provides a centralized interface for monitoring conveyor belt conditions, viewing AI-based damage detections, analyzing sensor telemetry, managing alerts, and generating maintenance reports. It integrates computer vision and IoT monitoring to support early identification of conveyor belt abnormalities.
 
-### ⚠️ Note – Live Dashboard
+### 1. Main Dashboard
 
-**Live Dashboard:**  https://beltsentinel-ai.onrender.com
+The main dashboard provides an overview of the conveyor monitoring system, including system status, available sensor information, belt condition indicators, and important monitoring information.
+
+![BELTSENTINEL AI Main Dashboard](images/Dashboard1.png)
+![BELTSENTINEL AI Dashboard Monitoring](images/Dashboard2.png)
+
+### 2. Live Camera Feed and AI Inspection
+
+The Live Feed interface is intended for visual inspection of the conveyor belt. The camera feed can be used with the YOLO-based vision model to identify visible belt abnormalities, including cracks, tears, edge damage, and joint damage, when detected by the system.
+
+![BELTSENTINEL AI Live Feed](images/Live%20Feed.png)
+
+### 3. Analytics Dashboard
+
+The analytics interface helps users review monitoring information and understand system trends to support condition assessment and maintenance planning.
+
+![BELTSENTINEL AI Analytics Overview](images/Analytics1.png)
+![BELTSENTINEL AI Analytics Trends](images/Analytics2.png)
+![BELTSENTINEL AI Detailed Analytics](images/Analytics3.png)
+
+### 4. Alerts
+
+The Alerts interface provides a place to review detected issues and system warnings. BELTSENTINEL AI is designed to classify conveyor conditions as **Normal, Warning, or Critical** based on the implemented monitoring and risk-assessment logic.
+
+![BELTSENTINEL AI Alerts](images/Alerts.png)
+
+### 8. Maintenance Reports and Data Export
+
+The Reports interface supports reviewing monitoring records and maintenance-related information. The project supports CSV and JSON report generation for further analysis and documentation.
+
+![BELTSENTINEL AI Reports](images/Reports.png)
+
+### 9. System Settings
+
+The Settings interface provides access to the dashboard's available configuration options for managing the monitoring system.
+
+![BELTSENTINEL AI Settings](images/Settings.png)
+
+---
+
+### How the Dashboard Supports Conveyor Monitoring
+
+- **AI Vision:** Detects visible belt damage using the trained YOLO model.
+- **IoT Sensor Monitoring:** Displays available telemetry from the ESP32 sensor system.
+- **Belt Position Tracking:** Uses encoder information to support belt movement and joint-level monitoring.
+- **Risk Assessment:** Supports Normal, Warning, and Critical condition classification.
+- **Analytics and Alerts:** Helps users review monitoring information and identify potential maintenance needs.
+- **Reporting:** Supports exporting monitoring information in CSV and JSON formats.
+
+The dashboard is part of the BELTSENTINEL AI prototype, developed to demonstrate intelligent conveyor belt monitoring and early warning capabilities for iron ore mining applications.
+
+
+### ⚠️ Note – Demo Live Dashboard
+
+**Demo Live Dashboard:**  https://beltsentinel-ai.onrender.com
 
 You can also view the dashboard interface screenshots directly in this README under **Demo Dashboard Interface**.
 
