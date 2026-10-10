@@ -1,8 +1,9 @@
 ### 📺 Demonstration
 A complete prototype and software demonstration is available through the project's YouTube video.
 YouTube: https://youtu.be/NYvcRXcdNOI
-
 Demo Dashboard: https://beltsentinel-ai.onrender.com
+⚠️ Note – Live Dashboard
+The BELTSENTINEL AI dashboard is hosted on Render. As the hosting service may temporarily spin down after a period of inactivity, the dashboard's first loading may take approximately one minute while the service starts again.
 
 ### 💻 Source Code
 The complete project source code is available in this repository.
