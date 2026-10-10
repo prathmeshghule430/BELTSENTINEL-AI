@@ -1,6 +1,5 @@
 ### 📺 Demonstration
 A complete prototype and software demonstration is available through the project's YouTube video.
-
 YouTube: https://youtu.be/NYvcRXcdNOI
 
 ### 🏆 Smart India Hackathon 2026
@@ -86,9 +85,9 @@ BeltSentinel AI integrates multiple monitoring layers into a single system:
           └────────────── Reports ────────────┘
 ```
 
-
-
-
+<p align="center">
+  <a href="### Demo Dashboard Interface">📸 Go to Dashboard Interface</a>
+</p>
 
 ## 🔍 AI-Based Damage Detection
 The computer-vision module uses Ultralytics YOLO to identify visible conveyor belt abnormalities from camera input.
@@ -302,7 +301,7 @@ BELTSENTINEL-AI/
 ├── camera/               # Camera and vision modules
 ├── dashboard/            # Web dashboard
 ├── database/             # SQLite database
-├── docs/                 # Documentation and results
+├── images/               # Dashboard Interface
 ├── esp32/                # ESP32 firmware and telemetry
 ├── models/               # Trained YOLO models
 ├── simulator/            # Sensor simulation utilities
@@ -371,7 +370,7 @@ These extensions are considered future development areas for industrial-scale de
 ## 🎯 Project Objective
 The objective of BeltSentinel AI is to demonstrate a unified digital approach for continuous conveyor belt condition monitoring and early identification of belt abnormalities, helping provide operators and maintenance personnel with timely, location-aware information through AI, sensor telemetry, analytics, and intelligent visualization.
 
-Demo Dashboard Interface:
+### Demo Dashboard Interface
 
 ![alt text](images/Dashboard1.png)
 ![alt text](images/Dashboard2.png)
@@ -383,4 +382,17 @@ Demo Dashboard Interface:
 ![alt text](images/Reports.png)
 ![alt text](images/Settings.png)
 
-Demo Dashboard: https://beltsentinel-ai.onrender.com
+### ⚠️ Note – Live Dashboard
+
+**Live Dashboard:**  https://beltsentinel-ai.onrender.com
+
+You can also view the dashboard interface screenshots directly in this README under **Demo Dashboard Interface**.
+
+*Note: The live dashboard may take approximately one minute to load after inactivity because of Render's free hosting environment. Please wait briefly if it does not open immediately.*
+
+Thank you for reviewing BELTSENTINEL AI!
+---
+
+<p align="center">
+  <a href="#beltsentinel-ai">⬆️ Back to Top</a>
+</p>
