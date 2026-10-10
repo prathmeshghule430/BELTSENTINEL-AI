@@ -85,8 +85,10 @@ BeltSentinel AI integrates multiple monitoring layers into a single system:
           └────────────── Reports ────────────┘
 ```
 
+---
+
 <p align="center">
-  <a href="### Demo Dashboard Interface">📸 Go to Dashboard Interface</a>
+  <a href="#demo-dashboard-interface">📸 Go to Dashboard Interface</a>
 </p>
 
 ## 🔍 AI-Based Damage Detection
