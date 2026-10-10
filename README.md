@@ -395,7 +395,6 @@ The analytics interface helps users review monitoring information and understand
 ![BELTSENTINEL AI Detailed Analytics](images/Analytics3.png)
 ![BELTSENTINEL AI Detailed Analytics](images/Graph Button.png)
 
-
 ### 4. Alerts
 
 The Alerts interface provides a place to review detected issues and system warnings. BELTSENTINEL AI is designed to classify conveyor conditions as **Normal, Warning, or Critical** based on the implemented monitoring and risk-assessment logic.
