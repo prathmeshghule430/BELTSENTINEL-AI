@@ -434,6 +434,11 @@ The dashboard is part of the BELTSENTINEL AI prototype, developed to demonstrate
 **Demo Live Dashboard:**  https://beltsentinel-ai.onrender.com
 
 You can also view the dashboard interface screenshots directly in this README under **Demo Dashboard Interface**.
+---
+
+<p align="center">
+  <a href="#demo-dashboard-interface">📸 Go to Dashboard Interface</a>
+</p>
 
 *Note: The live dashboard may take approximately one minute to load after inactivity because of Render's free hosting environment. Please wait briefly if it does not open immediately.*
 
