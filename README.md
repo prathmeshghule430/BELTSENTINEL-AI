@@ -300,7 +300,7 @@ BELTSENTINEL-AI/
 ├── camera/               # Camera and vision modules
 ├── dashboard/            # Web dashboard
 ├── database/             # SQLite database
-├── images/               # Dashboard Interface
+├── images/               # Dashboard interface
 ├── esp32/                # ESP32 firmware and telemetry
 ├── models/               # Trained YOLO models
 ├── simulator/            # Sensor simulation utilities
@@ -393,12 +393,15 @@ The analytics interface helps users review monitoring information and understand
 ![BELTSENTINEL AI Analytics Overview](images/Analytics1.png)
 ![BELTSENTINEL AI Analytics Trends](images/Analytics2.png)
 ![BELTSENTINEL AI Detailed Analytics](images/Analytics3.png)
+![BELTSENTINEL AI Detailed Analytics](images/Graph Button.png)
+
 
 ### 4. Alerts
 
 The Alerts interface provides a place to review detected issues and system warnings. BELTSENTINEL AI is designed to classify conveyor conditions as **Normal, Warning, or Critical** based on the implemented monitoring and risk-assessment logic.
 
-![BELTSENTINEL AI Alerts](images/Alerts.png)
+![BELTSENTINEL AI Alerts](images/Alerts1.png)
+![BELTSENTINEL AI Alerts](images/Alerts2.png)
 
 ### 5. Maintenance Reports and Data Export
 
