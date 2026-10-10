@@ -3,20 +3,6 @@ A complete prototype and software demonstration is available through the project
 
 YouTube: https://youtu.be/NYvcRXcdNOI
 
-Demo Dashboard Interface:
-![alt text](images/Dashboard1.png)
-![alt text](images/Dashboard2.png)
-![alt text](<images/Live Feed.png>)
-![alt text](images/Analytics1.png)
-![alt text](images/Analytics2.png)
-![alt text](images/Analytics3.png)
-![alt text](images/Alerts.png)
-![alt text](images/Reports.png)
-![alt text](images/Settings.png)
-
-Demo Dashboard: https://beltsentinel-ai.onrender.com
-
-
 ### 🏆 Smart India Hackathon 2026
 Project: BeltSentinel AI
 Problem Statement: 26008
@@ -384,3 +370,17 @@ These extensions are considered future development areas for industrial-scale de
 
 ## 🎯 Project Objective
 The objective of BeltSentinel AI is to demonstrate a unified digital approach for continuous conveyor belt condition monitoring and early identification of belt abnormalities, helping provide operators and maintenance personnel with timely, location-aware information through AI, sensor telemetry, analytics, and intelligent visualization.
+
+Demo Dashboard Interface:
+
+![alt text](images/Dashboard1.png)
+![alt text](images/Dashboard2.png)
+![alt text](<images/Live Feed.png>)
+![alt text](images/Analytics1.png)
+![alt text](images/Analytics2.png)
+![alt text](images/Analytics3.png)
+![alt text](images/Alerts.png)
+![alt text](images/Reports.png)
+![alt text](images/Settings.png)
+
+Demo Dashboard: https://beltsentinel-ai.onrender.com
